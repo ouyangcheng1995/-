@@ -1,0 +1,13 @@
+#Graphs 
+2 mpl1d=self.mplwidget.canvas
+3 mpl1d.ax.clear()
+4 mpl1d.ax.plot(X*1E3,I,'-r', linewidth=2)
+5 mpl1d.ax.set_xlim(X_Mmin*1E3, X_Mmax*1E3)
+6 mpl1d.ax.set_ylim(0, 1.01)
+7 mpl1d.ax.set_xlabel(r'$X (mm)$',fontsize=12, fontweight='bold')
+8 mpl1d.ax.set_ylabel(r'$I(X)$',fontsize=12, fontweight='bold')
+9 mpl1d.figure.suptitle('Fresnel Mirror',fontsize=16, fontweight='
+bold')
+10 mpl1d.ax.set_title(r"$\lambda = %.3e \ m, \ a = %4.1f \ mm, \ D =
+%3.2f \ m$"% (Lambda ,a*1E3, D),fontsize=14)
+11 mpl1d.draw()
